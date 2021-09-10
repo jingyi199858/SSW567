@@ -55,76 +55,70 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(TriangleClass.classify_triangle(9, 40, 41), "right")
 
     def test_TriangleClass16(self):
-        self.assertEqual(TriangleClass.classify_triangle(1,1,1), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(1, 1, 1), "equilateral")
 
     def test_TriangleClass17(self):
-        self.assertEqual(TriangleClass.classify_triangle(5,5,5), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(5, 5, 5), "equilateral")
 
     def test_TriangleClass18(self):
-        self.assertEqual(TriangleClass.classify_triangle(18,18,18), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(18, 18, 18), "equilateral")
 
     def test_TriangleClass19(self):
-        self.assertEqual(TriangleClass.classify_triangle(234,234,234), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(234, 234, 234), "equilateral")
 
     def test_TriangleClass20(self):
-        self.assertEqual(TriangleClass.classify_triangle(293,293,293), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(293, 293, 293), "equilateral")
 
     def test_TriangleClass21(self):
-        self.assertEqual(TriangleClass.classify_triangle(8,8,8), "equilateral")
+        self.assertEqual(TriangleClass.classify_triangle(8, 8, 8), "equilateral")
 
     def test_TriangleClass22(self):
-        self.assertEqual(TriangleClass.classify_triangle(6,3,8), "scalene")
+        self.assertEqual(TriangleClass.classify_triangle(6, 3, 8), "scalene")
 
     def test_TriangleClass23(self):
-        self.assertEqual(TriangleClass.classify_triangle(9,1,4), "scalene")
+        self.assertEqual(TriangleClass.classify_triangle(9, 1, 4), "scalene")
 
     def test_TriangleClass24(self):
-        self.assertEqual(TriangleClass.classify_triangle(8,7,2), "scalene")
+        self.assertEqual(TriangleClass.classify_triangle(8, 7, 2), "scalene")
 
     def test_TriangleClass25(self):
-        self.assertEqual(TriangleClass.classify_triangle(7,5,9), "scalene")
+        self.assertEqual(TriangleClass.classify_triangle(7, 5, 9), "scalene")
 
     def test_TriangleClass26(self):
-        self.assertEqual(TriangleClass.classify_triangle(3,8,7), "scalene")
+        self.assertEqual(TriangleClass.classify_triangle(3, 8, 7), "scalene")
 
     def test_TriangleClass27(self):
-        self.assertEqual(TriangleClass.classify_triangle(0,0,0), "none")
+        self.assertEqual(TriangleClass.classify_triangle(0, 0, 0), "none")
 
     def test_TriangleClass28(self):
         a = random.randrange(100)
         b = random.randrange(100)
-        c = math.sqrt(a*a+b*b)
-        self.assertEqual(TriangleClass.classify_triangle_withError(a,b,c,0.001), "right")
+        c = math.sqrt(a * a + b * b)
+        self.assertEqual(TriangleClass.classify_triangle_withError(a, b, c, 0.001), "right")
 
     def test_TriangleClass29(self):
         a = random.randrange(100)
         b = random.randrange(100)
-        c = math.sqrt(a*a+b*b)
-        self.assertEqual(TriangleClass.classify_triangle_withError(a,b,c,0.001), "right")
+        c = math.sqrt(a * a + b * b)
+        self.assertEqual(TriangleClass.classify_triangle_withError(a, b, c, 0.001), "right")
 
     def test_TriangleClass30(self):
         a = random.randrange(100)
         b = random.randrange(100)
-        c = math.sqrt(a*a+b*b)
-        self.assertEqual(TriangleClass.classify_triangle_withError(a,b,c,0.001), "right")
+        c = math.sqrt(a * a + b * b)
+        self.assertEqual(TriangleClass.classify_triangle_withError(a, b, c, 0.001), "right")
 
     def test_TriangleClass31(self):
         a = random.randrange(100)
         b = random.randrange(100)
-        c = math.sqrt(a*a+b*b)
-        self.assertEqual(TriangleClass.classify_triangle_withError(a,b,c,0.001), "right")
+        c = math.sqrt(a * a + b * b)
+        self.assertEqual(TriangleClass.classify_triangle_withError(a, b, c, 0.001), "right")
 
     def test_TriangleClass32(self):
         a = random.randrange(100)
         b = random.randrange(100)
-        c = math.sqrt(a*a+b*b)
-        self.assertEqual(TriangleClass.classify_triangle_withError(a,b,c,0.001), "right")
-
-
-
-
-
-
+        c = math.sqrt(a * a + b * b)
+        self.assertEqual(TriangleClass.classify_triangle_withError(a, b, c, 0.001), "right")
 
 
 if __name__ == '__main__':
